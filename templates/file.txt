@@ -1,0 +1,31 @@
+Add two plain text links to the footer in the @templates/base.html file:
+
+Terms and Condition → href="#"
+Privacy Policy → href="#"
+
+Requirements:
+
+* These should be simple text links only (no additional styling, classes, icons, or CSS changes).
+* Both links should point to # since the actual pages do not exist yet.
+* Preserve the existing footer layout and spacing as much as possible.
+* Do not modify any other part of @templates/base.html or any other file.
+
+ git add .
+! git commit -m 'landing page changes'
+
+Here's a clear, implementation-focused prompt:
+
+Add a new route to serve a **Terms and Conditions** page.
+
+Requirements:
+
+* Create a new GET route that renders `@templates/terms.html`.
+* Create the `templates/terms.html` template.
+* The page should contain:
+
+  * A title: **Terms and Conditions**
+  * A brief introduction.
+  * 4–5 concise terms and conditions sections (using headings and short paragraphs or bullet points).
+* Update the **Terms and Condition** link in `@template/base.html` to point to this new route instead of `#`.
+* Keep the page styling consistent with the rest of the application by extending the existing base template if applicable.
+* Do not modify any unrelated routes, templates, or application logic.
